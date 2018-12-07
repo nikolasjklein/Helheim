@@ -11,8 +11,6 @@ public class PlayerLook : MonoBehaviour
 
     private float xAxisClamp;
 
-    public RapidCrossbowController rapidCrossbow;
-
     private void Awake()
     {
         LockCursor();
@@ -27,16 +25,6 @@ public class PlayerLook : MonoBehaviour
     private void Update()
     {
         CameraRotation();
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            rapidCrossbow.isFiring = true;
-        }
-
-        if (Input.GetMouseButtonUp(0))
-        {
-            rapidCrossbow.isFiring = false;
-        }
     }
 
     private void CameraRotation()
