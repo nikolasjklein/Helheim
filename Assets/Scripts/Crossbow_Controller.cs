@@ -4,6 +4,21 @@ using UnityEngine;
 
 public class Crossbow_Controller : MonoBehaviour
 {
+    public Rigidbody boltPrefab;
+    public Transform boltSpawn;
+    public int force = 1000;
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Rigidbody boltInstance;
+            boltInstance = Instantiate(boltPrefab, boltSpawn.position, boltSpawn.rotation) as Rigidbody;
+            boltInstance.AddForce(boltSpawn.forward * force);
+        }
+    }
+
+    /*
     public GameObject boltPrefab;
     public Transform boltSpawn;
     public float boltSpeed = 30f;
@@ -40,4 +55,5 @@ public class Crossbow_Controller : MonoBehaviour
 
         Destroy(bolt);
     }
+    */
 }
