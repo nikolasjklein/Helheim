@@ -81,7 +81,7 @@ public class WeaponSwitch : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             currentSlot = InventorySlots.One;
-            inventorySlotText.text = "1 - Sword&Shield";
+            inventorySlotText.text = "1 - Double Axes";
             slot_0.gameObject.SetActive(false);
             slot_1.gameObject.SetActive(true);
             slot_2.gameObject.SetActive(false);
@@ -97,7 +97,7 @@ public class WeaponSwitch : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             currentSlot = InventorySlots.Two;
-            inventorySlotText.text = "2 - Bolt Rifle";
+            inventorySlotText.text = "2 - 'Blaster'";
             slot_0.gameObject.SetActive(false);
             slot_1.gameObject.SetActive(false);
             slot_2.gameObject.SetActive(true);
@@ -113,7 +113,7 @@ public class WeaponSwitch : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             currentSlot = InventorySlots.Three;
-            inventorySlotText.text = "3 - Repeating Crossbow";
+            inventorySlotText.text = "3 - Crossbow";
             slot_0.gameObject.SetActive(false);
             slot_1.gameObject.SetActive(false);
             slot_2.gameObject.SetActive(false);
@@ -129,7 +129,7 @@ public class WeaponSwitch : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             currentSlot = InventorySlots.Four;
-            inventorySlotText.text = "4";
+            inventorySlotText.text = "4 - 'SMG'";
             slot_0.gameObject.SetActive(false);
             slot_1.gameObject.SetActive(false);
             slot_2.gameObject.SetActive(false);
@@ -145,7 +145,7 @@ public class WeaponSwitch : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
             currentSlot = InventorySlots.Five;
-            inventorySlotText.text = "5";
+            inventorySlotText.text = "5 - 'Flamer'";
             slot_0.gameObject.SetActive(false);
             slot_1.gameObject.SetActive(false);
             slot_2.gameObject.SetActive(false);
@@ -161,7 +161,7 @@ public class WeaponSwitch : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha6))
         {
             currentSlot = InventorySlots.Six;
-            inventorySlotText.text = "6";
+            inventorySlotText.text = "6 - 'MG'";
             slot_0.gameObject.SetActive(false);
             slot_1.gameObject.SetActive(false);
             slot_2.gameObject.SetActive(false);
@@ -177,7 +177,7 @@ public class WeaponSwitch : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha7))
         {
             currentSlot = InventorySlots.Seven;
-            inventorySlotText.text = "7";
+            inventorySlotText.text = "7 - 'Big Boom'";
             slot_0.gameObject.SetActive(false);
             slot_1.gameObject.SetActive(false);
             slot_2.gameObject.SetActive(false);
