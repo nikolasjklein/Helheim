@@ -21,6 +21,10 @@ public class WeaponSwitch : MonoBehaviour
 
     public Text inventorySlotText;
 
+    public AudioClip changeWeapon;
+
+    public AudioSource myAudioSource;
+
     public GameObject slot_0;
     public GameObject slot_1;
     public GameObject slot_2;
@@ -58,11 +62,20 @@ public class WeaponSwitch : MonoBehaviour
         slot_7.gameObject.SetActive(false);
         slot_8.gameObject.SetActive(false);
         slot_9.gameObject.SetActive(false);
+
+
+        myAudioSource = gameObject.GetComponent<AudioSource>();
+
+        myAudioSource.clip = changeWeapon;
+        myAudioSource.Play();
+        
+
     }
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha0))
+
+        if (Input.GetKeyDown(KeyCode.Alpha0) && currentSlot != InventorySlots.Zero)
         {
             currentSlot = InventorySlots.Zero;
             inventorySlotText.text = "0 - Hands";
@@ -76,9 +89,12 @@ public class WeaponSwitch : MonoBehaviour
             slot_7.gameObject.SetActive(false);
             slot_8.gameObject.SetActive(false);
             slot_9.gameObject.SetActive(false);
+
+            myAudioSource.Stop();
+            myAudioSource.Play();
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1) && currentSlot != InventorySlots.One)
         {
             currentSlot = InventorySlots.One;
             inventorySlotText.text = "1 - Double Axes";
@@ -92,9 +108,12 @@ public class WeaponSwitch : MonoBehaviour
             slot_7.gameObject.SetActive(false);
             slot_8.gameObject.SetActive(false);
             slot_9.gameObject.SetActive(false);
+
+            myAudioSource.Stop();
+            myAudioSource.Play();
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha2) && currentSlot != InventorySlots.Two)
         {
             currentSlot = InventorySlots.Two;
             inventorySlotText.text = "2 - 'Blaster'";
@@ -108,9 +127,12 @@ public class WeaponSwitch : MonoBehaviour
             slot_7.gameObject.SetActive(false);
             slot_8.gameObject.SetActive(false);
             slot_9.gameObject.SetActive(false);
+
+            myAudioSource.Stop();
+            myAudioSource.Play();
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        if (Input.GetKeyDown(KeyCode.Alpha3) && currentSlot != InventorySlots.Three)
         {
             currentSlot = InventorySlots.Three;
             inventorySlotText.text = "3 - Crossbow";
@@ -124,9 +146,12 @@ public class WeaponSwitch : MonoBehaviour
             slot_7.gameObject.SetActive(false);
             slot_8.gameObject.SetActive(false);
             slot_9.gameObject.SetActive(false);
+
+            myAudioSource.Stop();
+            myAudioSource.Play();
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha4))
+        if (Input.GetKeyDown(KeyCode.Alpha4) && currentSlot != InventorySlots.Four)
         {
             currentSlot = InventorySlots.Four;
             inventorySlotText.text = "4 - 'SMG'";
@@ -140,9 +165,12 @@ public class WeaponSwitch : MonoBehaviour
             slot_7.gameObject.SetActive(false);
             slot_8.gameObject.SetActive(false);
             slot_9.gameObject.SetActive(false);
+
+            myAudioSource.Stop();
+            myAudioSource.Play();
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha5))
+        if (Input.GetKeyDown(KeyCode.Alpha5) && currentSlot != InventorySlots.Five)
         {
             currentSlot = InventorySlots.Five;
             inventorySlotText.text = "5 - 'Flamer'";
@@ -156,9 +184,12 @@ public class WeaponSwitch : MonoBehaviour
             slot_7.gameObject.SetActive(false);
             slot_8.gameObject.SetActive(false);
             slot_9.gameObject.SetActive(false);
+
+            myAudioSource.Stop();
+            myAudioSource.Play();
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha6))
+        if (Input.GetKeyDown(KeyCode.Alpha6) && currentSlot != InventorySlots.Six)
         {
             currentSlot = InventorySlots.Six;
             inventorySlotText.text = "6 - 'MG'";
@@ -172,9 +203,12 @@ public class WeaponSwitch : MonoBehaviour
             slot_7.gameObject.SetActive(false);
             slot_8.gameObject.SetActive(false);
             slot_9.gameObject.SetActive(false);
+
+            myAudioSource.Stop();
+            myAudioSource.Play();
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha7))
+        if (Input.GetKeyDown(KeyCode.Alpha7) && currentSlot != InventorySlots.Seven)
         {
             currentSlot = InventorySlots.Seven;
             inventorySlotText.text = "7 - 'Big Boom'";
@@ -188,9 +222,12 @@ public class WeaponSwitch : MonoBehaviour
             slot_7.gameObject.SetActive(true);
             slot_8.gameObject.SetActive(false);
             slot_9.gameObject.SetActive(false);
+
+            myAudioSource.Stop();
+            myAudioSource.Play();
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha8))
+        if (Input.GetKeyDown(KeyCode.Alpha8) && currentSlot != InventorySlots.Eight)
         {
             currentSlot = InventorySlots.Eight;
             inventorySlotText.text = "8";
@@ -204,9 +241,12 @@ public class WeaponSwitch : MonoBehaviour
             slot_7.gameObject.SetActive(false);
             slot_8.gameObject.SetActive(true);
             slot_9.gameObject.SetActive(false);
+
+            myAudioSource.Stop();
+            myAudioSource.Play();
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha9))
+        if (Input.GetKeyDown(KeyCode.Alpha9) && currentSlot != InventorySlots.Nine)
         {
             currentSlot = InventorySlots.Nine;
             inventorySlotText.text = "9";
@@ -220,6 +260,9 @@ public class WeaponSwitch : MonoBehaviour
             slot_7.gameObject.SetActive(false);
             slot_8.gameObject.SetActive(false);
             slot_9.gameObject.SetActive(true);
+
+            myAudioSource.Stop();
+            myAudioSource.Play();
         }
     }
 }
