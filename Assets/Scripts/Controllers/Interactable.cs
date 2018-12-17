@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHealthController : MonoBehaviour {
-
-    public int Health;
-
+public class Interactable : MonoBehaviour
+{
+    public float radius = 3f;
 }

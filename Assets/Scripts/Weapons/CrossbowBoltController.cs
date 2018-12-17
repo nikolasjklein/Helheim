@@ -69,7 +69,7 @@ public class CrossbowBoltController : MonoBehaviour {
 
             if (other.tag == "Enemy")
             {
-                other.transform.gameObject.GetComponent<EnemyHealthController>().Health -= Damage;
+                //other.transform.gameObject.GetComponent<EnemyHealthController>().Health -= Damage;
             }
 
         }
