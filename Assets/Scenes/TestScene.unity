@@ -2928,6 +2928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerLife: 100
+  playerHealth: {fileID: 595770957}
 --- !u!1 &296394485 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1430168311305352, guid: fc7248d933f989347905516d503183fd,
