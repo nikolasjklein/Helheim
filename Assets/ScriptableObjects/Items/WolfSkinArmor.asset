@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e063b35d4fc8ff41b449b2cd5f5b6d5, type: 3}
+  m_Name: WolfSkinArmor
+  m_EditorClassIdentifier: 
+  itemName: Wolf Skin Armor
+  itemIcon: {fileID: 21300000, guid: 661cb030c5b0a1d48b2dab0e60b332cd, type: 3}
+  itemRarity: Common
+  armorDefense: 8

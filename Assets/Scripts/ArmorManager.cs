@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ArmorManager : MonoBehaviour
 {
+    public string whichArmorIsEquipped;
+
     public enum Armors
     {
         Base,
@@ -69,7 +71,117 @@ public class ArmorManager : MonoBehaviour
 
     public void Update()
     {
+        if (whichArmorIsEquipped == "LeatherArmor")
+        {
+            currentSlot = Armors.LeatherArmor;
+            UpdateArmors();
+        }
 
+        if (whichArmorIsEquipped == "BoarHideArmor")
+        {
+            currentSlot = Armors.BoarHideArmor;
+            UpdateArmors();
+        }
+
+        if (whichArmorIsEquipped == "WolfSkinArmor")
+        {
+            currentSlot = Armors.WolfSkinArmor;
+            UpdateArmors();
+        }
+
+        if (whichArmorIsEquipped == "ChainmailArmor")
+        {
+            currentSlot = Armors.ChainmailArmor;
+            UpdateArmors();
+        }
+
+        if (whichArmorIsEquipped == "AncientArmor")
+        {
+            currentSlot = Armors.AncientArmor;
+            UpdateArmors();
+        }
+
+        if (whichArmorIsEquipped == "RunicArmor")
+        {
+            currentSlot = Armors.RunicArmor;
+            UpdateArmors();
+        }
+
+        if (whichArmorIsEquipped == "SlaughterersArmor")
+        {
+            currentSlot = Armors.SlaughterersArmor;
+            UpdateArmors();
+        }
+
+        if (whichArmorIsEquipped == "MithrilArmor")
+        {
+            currentSlot = Armors.MithrilArmor;
+            UpdateArmors();
+        }
+
+        if (whichArmorIsEquipped == "ValkyrieInfusedArmor")
+        {
+            currentSlot = Armors.ValkyrieInfusedArmor;
+            UpdateArmors();
+        }
+
+        if (whichArmorIsEquipped == "MuspelheimArmor")
+        {
+            currentSlot = Armors.MuspelheimArmor;
+            UpdateArmors();
+        }
+
+        if (whichArmorIsEquipped == "AlfheimArmor")
+        {
+            currentSlot = Armors.AlfheimArmor;
+            UpdateArmors();
+        }
+
+        if (whichArmorIsEquipped == "NiflheimArmor")
+        {
+            currentSlot = Armors.NiflheimArmor;
+            UpdateArmors();
+        }
+
+        if (whichArmorIsEquipped == "MidgardArmor")
+        {
+            currentSlot = Armors.MidgardArmor;
+            UpdateArmors();
+        }
+
+        if (whichArmorIsEquipped == "AsgardArmor")
+        {
+            currentSlot = Armors.AsgardArmor;
+            UpdateArmors();
+        }
+
+        if (whichArmorIsEquipped == "JotunheimArmor")
+        {
+            currentSlot = Armors.JotunheimArmor;
+            UpdateArmors();
+        }
+
+        if (whichArmorIsEquipped == "VanaheimArmor")
+        {
+            currentSlot = Armors.VanaheimArmor;
+            UpdateArmors();
+        }
+
+        if (whichArmorIsEquipped == "SvartalfheimArmor")
+        {
+            currentSlot = Armors.SvartalfheimArmor;
+            UpdateArmors();
+        }
+
+        if (whichArmorIsEquipped == "HelheimArmor")
+        {
+            currentSlot = Armors.HelheimArmor;
+            UpdateArmors();
+        }
+    }
+
+    public void UpdateArmors()
+    {
         if (currentSlot == Armors.Base)
         {
             LeftHand.GetComponent<MeshRenderer>().material = BaseMat;
