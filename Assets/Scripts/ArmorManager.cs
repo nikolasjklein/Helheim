@@ -71,6 +71,12 @@ public class ArmorManager : MonoBehaviour
 
     public void Update()
     {
+        if (whichArmorIsEquipped == "Unarmored")
+        {
+            currentSlot = Armors.Base;
+            UpdateArmors();
+        }
+
         if (whichArmorIsEquipped == "LeatherArmor")
         {
             currentSlot = Armors.LeatherArmor;
