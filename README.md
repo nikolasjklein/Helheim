@@ -82,11 +82,36 @@ TROUBLESHOOTING
 FAQ
 ---
 
-//no questions here yet
+Q: What is 'Helheim'?
 
-Q:
+A: 'Helheim' is a DOOM93-like FPS with RPG progression element, resource management and inventory with maybe some Darksouls-like mechanics when you die-
 
-A:
+--------------------------
+
+Q: Is 'Helheim' a Single-Player game?
+
+A: Yes, 'Helheim' focuses on a heroes journey throught the 9 norse realms and will feature unique, hand-crafted worlds for you to traverse.
+
+--------------------------
+
+Q: How much is 'Helheim' going to cost?
+
+A: 'Helheim' is planned to be completely free as long as we develop it. For release, we did not plan a pricing method yet.
+
+--------------------------
+
+Q: Can I collect items and such in the game?
+
+A: You definetely can! 'Helheim' features a full RPG system which includes upgradeable weapons, skills and an armor system!
+
+--------------------------
+
+Q: Who is working on 'Helheim'?
+
+A: Right now, 'Helheim' is being developed by 2 people: Jeff Gagne and Nikolas Klein!
+
+--------------------------
+
 
 
  MAINTAINERS
