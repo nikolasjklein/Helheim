@@ -1644,7 +1644,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SecretsMax: 2
   SecretsCur: 0
-  SecretsUpdateText: {fileID: 1433144341}
+  SecretsName: 
+  SecretsUpdateText_1: {fileID: 1433144341}
+  SecretsUpdateText_2: {fileID: 1166370538}
+  SecretsUpdateText_3: {fileID: 2068825494}
   delay: 5
 --- !u!1 &48306413 stripped
 GameObject:
@@ -28688,6 +28691,85 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4814566229310224, guid: fc7248d933f989347905516d503183fd,
     type: 2}
   m_PrefabInternal: {fileID: 1128852265}
+--- !u!1 &1166370536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1009121599489450, guid: 9b4ab957b59532a44897439131ebe96a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1166370537}
+  - component: {fileID: 1166370539}
+  - component: {fileID: 1166370538}
+  m_Layer: 5
+  m_Name: SecretsUpdateText_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1166370537
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 224198023986028126, guid: 9b4ab957b59532a44897439131ebe96a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1166370536}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 697618841}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 190.14001}
+  m_SizeDelta: {x: 207.27, y: 16.36}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1166370538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114422649378146826, guid: 9b4ab957b59532a44897439131ebe96a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1166370536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 1c0ed071d120ba04ba89a555c700c5e7, type: 3}
+    m_FontSize: 15
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 200
+    m_Alignment: 4
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: '"SECRET NAME"'
+--- !u!222 &1166370539
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 222211481928769032, guid: 9b4ab957b59532a44897439131ebe96a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1166370536}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1168270260
 Prefab:
   m_ObjectHideFlags: 0
@@ -32538,6 +32620,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   secretFoundStatsHolder: {fileID: 46557046}
   foundSecret: 0
+  secretName: Nice Axe, Boiii
 --- !u!65 &1303808187
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36004,7 +36087,7 @@ GameObject:
   - component: {fileID: 1433144342}
   - component: {fileID: 1433144341}
   m_Layer: 5
-  m_Name: SecretsUpdateText
+  m_Name: SecretsUpdateText_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36026,8 +36109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000011444, y: 194.19003}
-  m_SizeDelta: {x: 207.27, y: 40.98}
+  m_AnchoredPosition: {x: -0.000011444, y: 206.5}
+  m_SizeDelta: {x: 207.27, y: 16.36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1433144341
 MonoBehaviour:
@@ -36062,9 +36145,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'SECRETUPDATETEXT
-
-    X/X'
+  m_Text: SECRET UPDATE TEXT
 --- !u!222 &1433144342
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -46073,6 +46154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   secretFoundStatsHolder: {fileID: 46557046}
   foundSecret: 0
+  secretName: Dead Gargoyle
 --- !u!65 &1865163107
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51515,6 +51597,85 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2068825492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1009121599489450, guid: 9b4ab957b59532a44897439131ebe96a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2068825493}
+  - component: {fileID: 2068825495}
+  - component: {fileID: 2068825494}
+  m_Layer: 5
+  m_Name: SecretsUpdateText_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2068825493
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 224198023986028126, guid: 9b4ab957b59532a44897439131ebe96a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2068825492}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 697618841}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 173.78003}
+  m_SizeDelta: {x: 207.27, y: 16.36}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2068825494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114422649378146826, guid: 9b4ab957b59532a44897439131ebe96a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2068825492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 1c0ed071d120ba04ba89a555c700c5e7, type: 3}
+    m_FontSize: 15
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 200
+    m_Alignment: 4
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: X/X
+--- !u!222 &2068825495
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 222211481928769032, guid: 9b4ab957b59532a44897439131ebe96a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2068825492}
+  m_CullTransparentMesh: 0
 --- !u!1001 &2071423737
 Prefab:
   m_ObjectHideFlags: 0

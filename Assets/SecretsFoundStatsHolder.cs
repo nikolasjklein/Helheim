@@ -7,7 +7,11 @@ public class SecretsFoundStatsHolder : MonoBehaviour
 {
     public int SecretsMax;
     public int SecretsCur;
-    public Text SecretsUpdateText;
+    public string SecretsName;
+
+    public Text SecretsUpdateText_1;
+    public Text SecretsUpdateText_2;
+    public Text SecretsUpdateText_3;
     public float delay;
 
     public void Start()
@@ -15,7 +19,9 @@ public class SecretsFoundStatsHolder : MonoBehaviour
         SecretsMax = SecretsMax;
         SecretsCur = 0;
 
-        SecretsUpdateText.gameObject.SetActive(false);
+        SecretsUpdateText_1.gameObject.SetActive(false);
+        SecretsUpdateText_2.gameObject.SetActive(false);
+        SecretsUpdateText_3.gameObject.SetActive(false);
     }
 
     public void Update()
@@ -26,17 +32,25 @@ public class SecretsFoundStatsHolder : MonoBehaviour
     public void FoundNewSecret()
     {
         SecretsCur = SecretsCur + 1;
-        SecretsUpdateText.text = "Secret Found\n" + SecretsCur + " / " + SecretsMax;
-        SecretsUpdateText.gameObject.SetActive(true);
-        StartCoroutine(DisplaySecretText(SecretsUpdateText.gameObject, delay));
+        SecretsUpdateText_1.text = "Secret Found";
+        SecretsUpdateText_2.text = SecretsCur + " / " + SecretsMax;
+        SecretsUpdateText_3.text = "'" + SecretsName + "'";
+
+        SecretsUpdateText_1.gameObject.SetActive(true);
+        SecretsUpdateText_2.gameObject.SetActive(true);
+        SecretsUpdateText_3.gameObject.SetActive(true);
+
+        StartCoroutine(DisplaySecretText(SecretsUpdateText_1.gameObject, SecretsUpdateText_2.gameObject, SecretsUpdateText_3.gameObject, delay));
     }
 
     public void HideSecretText ()
     {
-        SecretsUpdateText.gameObject.SetActive(false);
+        SecretsUpdateText_1.gameObject.SetActive(false);
+        SecretsUpdateText_2.gameObject.SetActive(false);
+        SecretsUpdateText_3.gameObject.SetActive(false);
     }
 
-    private IEnumerator DisplaySecretText(GameObject text, float delay)
+    private IEnumerator DisplaySecretText(GameObject text, GameObject text2, GameObject text3, float delay)
     {
         yield return new WaitForSeconds(delay);
 

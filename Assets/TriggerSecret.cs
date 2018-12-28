@@ -6,6 +6,7 @@ public class TriggerSecret : MonoBehaviour
 {
     public SecretsFoundStatsHolder secretFoundStatsHolder;
     public bool foundSecret;
+    public string secretName;
 
 	void Start ()
     {
@@ -29,6 +30,7 @@ public class TriggerSecret : MonoBehaviour
             {
                 if (!foundSecret)
                 {
+                    secretFoundStatsHolder.SecretsName = secretName;
                     Debug.Log("Pressed Space");
                     secretFoundStatsHolder.FoundNewSecret();
                     foundSecret = true;
