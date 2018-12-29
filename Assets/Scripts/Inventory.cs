@@ -24,18 +24,23 @@ public class Inventory : MonoBehaviour
     public delegate void OnItemChanged();
     public OnItemChanged onItemChangedCallback;
 
+    //inventory space
     public int space = 20;
 
+    //list of items currently in inventory
     public List<Item> items = new List<Item>();
 
+    //add-function
     public bool Add (Item item)
     {
+        //if the inventory is full
         if (items.Count >= space)
         {
             Debug.Log("Not enough room.");
             return false;
         }
 
+        //function to add new item to the inventory
         items.Add(item);
 
         if (onItemChangedCallback != null)
@@ -46,6 +51,7 @@ public class Inventory : MonoBehaviour
         return true;
     }
 
+    //function to remove item from the inventory
     public void Remove (Item item)
     {
         items.Remove(item);

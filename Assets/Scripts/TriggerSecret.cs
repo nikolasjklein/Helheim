@@ -20,7 +20,7 @@ public class TriggerSecret : MonoBehaviour
 
     public void OnTriggerStay(Collider other)
     {
-        Debug.Log("Player is in Trigger Area");
+        //Debug.Log("Player is in Trigger Area");
 
         if (other.tag == "Player")
         {

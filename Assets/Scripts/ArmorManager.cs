@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class ArmorManager : MonoBehaviour
 {
+    //string which reads out which armor is equipped - gets set through the inventory and equip-button-press
     public string whichArmorIsEquipped;
 
+    //enum for all the armor states possible (also containing having no armor)
     public enum Armors
     {
         Base,
@@ -29,6 +31,7 @@ public class ArmorManager : MonoBehaviour
         HelheimArmor
     }
 
+    //materials for all the armors (also containing the unarmored state)
     public Material BaseMat;
     public Material LeatherArmorMat;
     public Material BoardHideArmorMat;
@@ -49,9 +52,12 @@ public class ArmorManager : MonoBehaviour
     public Material SvartalfheimArmorMat;
     public Material HelheimArmorMat;
 
+    //object of the left hand (for changing its state/material)
     public GameObject LeftHand;
+    //object of the right hand (for changing its state/material)
     public GameObject RightHand;
 
+    //setting the current armor to unarmored
     public Armors currentSlot = Armors.Base;
 
     public static WeaponSwitch Instance;
@@ -66,9 +72,11 @@ public class ArmorManager : MonoBehaviour
 
     public void Start()
     {
+        //setting the current armor to unarmored
         currentSlot = Armors.Base;
     }
 
+    //checks for all the different armors - if one applies, change the armor state to that and call the UpdateArmors function
     public void Update()
     {
         if (whichArmorIsEquipped == "Unarmored")
@@ -186,6 +194,10 @@ public class ArmorManager : MonoBehaviour
         }
     }
 
+    /*
+        function which gets called when an armor is being equipped
+        this currently only changes the materials of the hand gameobjects to look accordingly
+    */
     public void UpdateArmors()
     {
         if (currentSlot == Armors.Base)
