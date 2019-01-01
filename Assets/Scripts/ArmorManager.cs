@@ -28,7 +28,9 @@ public class ArmorManager : MonoBehaviour
         JotunheimArmor,
         VanaheimArmor,
         SvartalfheimArmor,
-        HelheimArmor
+        HelheimArmor,
+        DoomGuyArmor,
+        StormtrooperArmor
     }
 
     //materials for all the armors (also containing the unarmored state)
@@ -51,6 +53,8 @@ public class ArmorManager : MonoBehaviour
     public Material VanaheimArmorMat;
     public Material SvartalfheimArmorMat;
     public Material HelheimArmorMat;
+    public Material DoomGuyArmor;
+    public Material StormtrooperArmor;
 
     //object of the left hand (for changing its state/material)
     public GameObject LeftHand;
@@ -192,6 +196,18 @@ public class ArmorManager : MonoBehaviour
             currentSlot = Armors.HelheimArmor;
             UpdateArmors();
         }
+
+        if (whichArmorIsEquipped == "DoomGuyArmor")
+        {
+            currentSlot = Armors.DoomGuyArmor;
+            UpdateArmors();
+        }
+
+        if (whichArmorIsEquipped == "StormtrooperArmor")
+        {
+            currentSlot = Armors.StormtrooperArmor;
+            UpdateArmors();
+        }
     }
 
     /*
@@ -312,6 +328,18 @@ public class ArmorManager : MonoBehaviour
         {
             LeftHand.GetComponent<MeshRenderer>().material = HelheimArmorMat;
             RightHand.GetComponent<MeshRenderer>().material = HelheimArmorMat;
+        }
+
+        if (currentSlot == Armors.DoomGuyArmor)
+        {
+            LeftHand.GetComponent<MeshRenderer>().material = DoomGuyArmor;
+            RightHand.GetComponent<MeshRenderer>().material = DoomGuyArmor;
+        }
+
+        if (currentSlot == Armors.StormtrooperArmor)
+        {
+            LeftHand.GetComponent<MeshRenderer>().material = StormtrooperArmor;
+            RightHand.GetComponent<MeshRenderer>().material = StormtrooperArmor;
         }
     }
 }

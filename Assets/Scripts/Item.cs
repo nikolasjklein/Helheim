@@ -110,6 +110,16 @@ public class Item : ScriptableObject
             player.GetComponentInChildren<ArmorManager>().whichArmorIsEquipped = "Unarmored";
         }
 
+        else if (name == "DoomGuyArmor" && player.GetComponentInChildren<ArmorManager>().whichArmorIsEquipped == "DoomGuyArmor")
+        {
+            player.GetComponentInChildren<ArmorManager>().whichArmorIsEquipped = "Unarmored";
+        }
+
+        else if (name == "Stormtrooperarmor" && player.GetComponentInChildren<ArmorManager>().whichArmorIsEquipped == "Stormtrooperarmor")
+        {
+            player.GetComponentInChildren<ArmorManager>().whichArmorIsEquipped = "Unarmored";
+        }
+
         else
         {
             player.GetComponentInChildren<ArmorManager>().whichArmorIsEquipped = name;
