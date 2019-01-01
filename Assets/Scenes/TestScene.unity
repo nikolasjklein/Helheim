@@ -14308,6 +14308,72 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!1001 &506003613
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 5363a0ccbc9624244aeb9345c292743b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.593805
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5363a0ccbc9624244aeb9345c292743b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.752
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5363a0ccbc9624244aeb9345c292743b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.7699413
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5363a0ccbc9624244aeb9345c292743b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5363a0ccbc9624244aeb9345c292743b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5363a0ccbc9624244aeb9345c292743b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5363a0ccbc9624244aeb9345c292743b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5363a0ccbc9624244aeb9345c292743b, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5363a0ccbc9624244aeb9345c292743b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 13.081412
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5363a0ccbc9624244aeb9345c292743b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 13.081412
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5363a0ccbc9624244aeb9345c292743b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 23.649015
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5363a0ccbc9624244aeb9345c292743b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0803b8a73e53c3f47abd82fbaee43a22, type: 2}
+    - target: {fileID: 400000, guid: 5363a0ccbc9624244aeb9345c292743b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5363a0ccbc9624244aeb9345c292743b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5363a0ccbc9624244aeb9345c292743b, type: 3}
+  m_IsPrefabAsset: 0
 --- !u!1001 &508471441
 Prefab:
   m_ObjectHideFlags: 0
@@ -35362,7 +35428,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7a3f7142d55b1554daf7964f478b66ff, type: 3}
       propertyPath: m_RootOrder
-      value: 34
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7a3f7142d55b1554daf7964f478b66ff, type: 3}
       propertyPath: m_LocalScale.x
@@ -35386,7 +35452,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: ba13781f6b2ee5846a6b5480d27ccb50, type: 2}
     - target: {fileID: 100000, guid: 7a3f7142d55b1554daf7964f478b66ff, type: 3}
       propertyPath: m_Name
-      value: viking_shield (2)
+      value: viking_shield_03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a3f7142d55b1554daf7964f478b66ff, type: 3}
@@ -39825,7 +39891,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7a3f7142d55b1554daf7964f478b66ff, type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7a3f7142d55b1554daf7964f478b66ff, type: 3}
       propertyPath: m_LocalScale.x
@@ -39849,7 +39915,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: d18ea38699ada9146b04398d36fac9ff, type: 2}
     - target: {fileID: 100000, guid: 7a3f7142d55b1554daf7964f478b66ff, type: 3}
       propertyPath: m_Name
-      value: viking_shield (3)
+      value: viking_shield_04
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a3f7142d55b1554daf7964f478b66ff, type: 3}
@@ -41745,7 +41811,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7a3f7142d55b1554daf7964f478b66ff, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7a3f7142d55b1554daf7964f478b66ff, type: 3}
       propertyPath: m_LocalScale.x
@@ -41767,6 +41833,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4a99d6892013fef478c209b896b1a9ec, type: 2}
+    - target: {fileID: 100000, guid: 7a3f7142d55b1554daf7964f478b66ff, type: 3}
+      propertyPath: m_Name
+      value: viking_shield_01
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a3f7142d55b1554daf7964f478b66ff, type: 3}
   m_IsPrefabAsset: 0
@@ -52706,7 +52776,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7a3f7142d55b1554daf7964f478b66ff, type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7a3f7142d55b1554daf7964f478b66ff, type: 3}
       propertyPath: m_LocalScale.x
@@ -52730,7 +52800,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: ede1017280bbe6340bc81f9e16f0445e, type: 2}
     - target: {fileID: 100000, guid: 7a3f7142d55b1554daf7964f478b66ff, type: 3}
       propertyPath: m_Name
-      value: viking_shield (1)
+      value: viking_shield_02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a3f7142d55b1554daf7964f478b66ff, type: 3}
