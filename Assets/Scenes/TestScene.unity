@@ -39111,7 +39111,7 @@ Prefab:
     - target: {fileID: 114422649378146826, guid: 9b4ab957b59532a44897439131ebe96a,
         type: 2}
       propertyPath: m_Text
-      value: Helheim Development Build ver 0.0.2.1
+      value: Helheim Development Build ver 0.0.2.2
       objectReference: {fileID: 0}
     - target: {fileID: 1438871548567954, guid: 9b4ab957b59532a44897439131ebe96a, type: 2}
       propertyPath: m_IsActive
