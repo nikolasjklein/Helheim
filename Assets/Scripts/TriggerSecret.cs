@@ -34,6 +34,7 @@ public class TriggerSecret : MonoBehaviour
                     Debug.Log("Pressed Space");
                     secretFoundStatsHolder.FoundNewSecret();
                     foundSecret = true;
+                    this.GetComponent<AudioSource>().Play(0);
                 }
                 
                 else

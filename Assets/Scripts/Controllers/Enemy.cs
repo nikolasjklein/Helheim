@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
 
     public float attackRadius = 1f;
     public float delay = 2f;
+    public int health = 5;
 
     public int enemyDamage = 5;
 
@@ -25,6 +26,11 @@ public class Enemy : MonoBehaviour
 
     public void Update()
     {
+        if (health <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+
         float distance = Vector3.Distance(target.position, transform.position);
 
         if (distance <= attackRadius)
@@ -41,6 +47,7 @@ public class Enemy : MonoBehaviour
 
     public void AttackPlayer()
     {
+        playerController.GetComponent<AudioSource>().Play(0);
         playerController.playerLife -= enemyDamage;
     }
 
