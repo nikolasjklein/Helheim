@@ -7,11 +7,11 @@ public class ToggleInventory : MonoBehaviour
 {
     public Canvas inventoryCanvas;
 
-    public bool isToggled = false;
+    public bool isToggled = true;
 
     public void Start()
     {
-        isToggled = false;
+        isToggled = true;
     }
 
     public void Update()

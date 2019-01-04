@@ -1575,6 +1575,7 @@ GameObject:
   - component: {fileID: 46557046}
   - component: {fileID: 46557048}
   - component: {fileID: 46557047}
+  - component: {fileID: 46557049}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1675,6 +1676,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b35f0a49ddc8114ab073e9b9ace8f09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &46557049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 46557041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873a2ca0d3c988b43bd8ebad19f5f111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleInventory: {fileID: 46557045}
+  Inventory: {fileID: 1435940437}
+  delay: 1
 --- !u!1 &48306413 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1430168311305352, guid: fc7248d933f989347905516d503183fd,
@@ -39096,7 +39111,7 @@ Prefab:
     - target: {fileID: 114422649378146826, guid: 9b4ab957b59532a44897439131ebe96a,
         type: 2}
       propertyPath: m_Text
-      value: Helheim Development Build ver 0.0.2.0
+      value: Helheim Development Build ver 0.0.2.1
       objectReference: {fileID: 0}
     - target: {fileID: 1438871548567954, guid: 9b4ab957b59532a44897439131ebe96a, type: 2}
       propertyPath: m_IsActive
@@ -39115,12 +39130,12 @@ Prefab:
     - target: {fileID: 224572377562398658, guid: 9b4ab957b59532a44897439131ebe96a,
         type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224348904264190750, guid: 9b4ab957b59532a44897439131ebe96a,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 224198023986028126, guid: 9b4ab957b59532a44897439131ebe96a,
         type: 2}
