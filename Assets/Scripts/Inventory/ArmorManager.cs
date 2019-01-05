@@ -30,7 +30,8 @@ public class ArmorManager : MonoBehaviour
         SvartalfheimArmor,
         HelheimArmor,
         DoomGuyArmor,
-        StormtrooperArmor
+        StormtrooperArmor,
+        GalaxyGlove
     }
 
     //materials for all the armors (also containing the unarmored state)
@@ -55,6 +56,7 @@ public class ArmorManager : MonoBehaviour
     public Material HelheimArmorMat;
     public Material DoomGuyArmor;
     public Material StormtrooperArmor;
+    public Material GalaxyGlove;
 
     //object of the left hand (for changing its state/material)
     public GameObject LeftHand;
@@ -208,6 +210,12 @@ public class ArmorManager : MonoBehaviour
             currentSlot = Armors.StormtrooperArmor;
             UpdateArmors();
         }
+
+        if (whichArmorIsEquipped == "GalaxyGlove")
+        {
+            currentSlot = Armors.GalaxyGlove;
+            UpdateArmors();
+        }
     }
 
     /*
@@ -340,6 +348,12 @@ public class ArmorManager : MonoBehaviour
         {
             LeftHand.GetComponent<MeshRenderer>().material = StormtrooperArmor;
             RightHand.GetComponent<MeshRenderer>().material = StormtrooperArmor;
+        }
+
+        if (currentSlot == Armors.GalaxyGlove)
+        {
+            LeftHand.GetComponent<MeshRenderer>().material = GalaxyGlove;
+            RightHand.GetComponent<MeshRenderer>().material = GalaxyGlove;
         }
     }
 }

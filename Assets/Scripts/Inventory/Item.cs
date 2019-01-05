@@ -120,6 +120,11 @@ public class Item : ScriptableObject
             player.GetComponentInChildren<ArmorManager>().whichArmorIsEquipped = "Unarmored";
         }
 
+        else if (name == "GalaxyGlove" && player.GetComponentInChildren<ArmorManager>().whichArmorIsEquipped == "GalaxyGlove")
+        {
+            player.GetComponentInChildren<ArmorManager>().whichArmorIsEquipped = "Unarmored";
+        }
+
         else
         {
             player.GetComponentInChildren<ArmorManager>().whichArmorIsEquipped = name;
