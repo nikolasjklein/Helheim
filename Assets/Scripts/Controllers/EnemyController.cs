@@ -5,13 +5,33 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
+    public enum Thrall_States
+    {
+        Idle,
+        Walk
+    }
+
+    public Animator Thrall_Animator;
+
     public float lookRadius = 2.5f;
 
     Transform target;
     NavMeshAgent agent;
 
+    public Thrall_States currentState = Thrall_States.Idle;
+
+    public Thrall_States CurrentState
+    {
+        get
+        {
+            return currentState;
+        }
+    }
+
     public void Start()
     {
+        currentState = Thrall_States.Idle;
+
         target = PlayerManager.instance.player.transform;
         agent = GetComponent<NavMeshAgent>();
     }
@@ -23,11 +43,27 @@ public class EnemyController : MonoBehaviour
         if (distance <= lookRadius)
         {
             agent.SetDestination(target.position);
+            currentState = Thrall_States.Walk;
 
             if (distance <= agent.stoppingDistance)
             {
                 FaceTarget();
             }
+        }
+
+        else
+        {
+            currentState = Thrall_States.Idle;
+        }
+
+        if (currentState == Thrall_States.Idle)
+        {
+            Thrall_Animator.SetBool("isWalking", false);
+        }
+
+        else if (currentState == Thrall_States.Walk)
+        {
+            Thrall_Animator.SetBool("isWalking", true);
         }
     }
 
