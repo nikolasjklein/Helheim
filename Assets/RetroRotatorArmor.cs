@@ -26,51 +26,53 @@ public class RetroRotatorArmor : MonoBehaviour
 
     void Update()
     {
-        Vector3 viewDirection = -new Vector3(MainCamera.transform.forward.x, 0, MainCamera.transform.forward.z);
+        Vector3 viewDirection = MainCamera.transform.position - this.transform.position;
         var viewAngle = Vector3.Angle(transform.forward, viewDirection);
 
-        Debug.Log(viewAngle);
-
+        Debug.Log(viewAngle + SpriteRenderer.sprite.name);
+        viewAngle += 22.5f;
         ///////////////////////////////////////////////////////////////
-
-        if (/*viewAngle >= 327.5f && */viewAngle <= 22.5f)
+        if (/*viewAngle >= 327.5f && */viewAngle <= 45)
         {
             SpriteRenderer.sprite = sprite1;
         }
 
-        else if (viewAngle >= 22.6f && viewAngle <= 67.5f)
+        else if (viewAngle >= 45 && viewAngle <= 90)
         {
             SpriteRenderer.sprite = sprite2;
         }
 
-        else if (viewAngle >= 67.5f && viewAngle <= 102.5f)
+        else if (viewAngle >= 90 && viewAngle <= 135)
         {
             SpriteRenderer.sprite = sprite3;
         }
 
-        else if (viewAngle >= 102.5f && viewAngle <= 147.5f)
+        else if (viewAngle >= 135 && viewAngle <= 180)
         {
             SpriteRenderer.sprite = sprite4;
         }
 
-        else if (viewAngle >= 147.5f && viewAngle <= 192.5f)
+        if (MainCamera.transform.position.z + MainCamera.transform.position.x < this.transform.position.z + MainCamera.transform.position.x)
         {
-            SpriteRenderer.sprite = sprite5;
-        }
+            if (viewAngle <= 45)
+            {
+                SpriteRenderer.sprite = sprite8;
+            }
 
-        else if (viewAngle >= 192.5f && viewAngle <= 237.5f)
-        {
-            SpriteRenderer.sprite = sprite6;
-        }
+            else if (viewAngle >= 45 && viewAngle <= 90)
+            {
+                SpriteRenderer.sprite = sprite7;
+            }
 
-        else if (viewAngle >= 237.5f && viewAngle <= 282.5f)
-        {
-            SpriteRenderer.sprite = sprite7;
-        }
+            else if (viewAngle >= 90 && viewAngle <= 135)
+            {
+                SpriteRenderer.sprite = sprite6;
+            }
 
-        else if (viewAngle >= 282.5f && viewAngle <= -327.5f)
-        {
-            SpriteRenderer.sprite = sprite8;
+            else if (viewAngle >= 135 && viewAngle <= 180)
+            {
+                SpriteRenderer.sprite = sprite5;
+            }
         }
     }
 
