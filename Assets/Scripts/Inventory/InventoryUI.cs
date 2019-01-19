@@ -68,26 +68,30 @@ public class InventoryUI : MonoBehaviour
                 //set sprite for 'common' tagged item
                 if (inventory.items[i].itemRarity == "Common")
                 {
-                    slots[i].transform.Find("ArmorBase").GetComponentInChildren<Image>().sprite = greySprite;
+                    //slots[i].transform.Find("ArmorBase").GetComponentInChildren<Image>().sprite = greySprite;
+                    slots[i].transform.Find("ArmorBase").GetComponentInChildren<Image>().color = greyColor;
                 }
 
                 //set sprite for 'uncommon' tagged item
                 if (inventory.items[i].itemRarity == "Uncommon")
                 {
-                    slots[i].transform.Find("ArmorBase").GetComponentInChildren<Image>().sprite = greenSprite;
+                    //slots[i].transform.Find("ArmorBase").GetComponentInChildren<Image>().sprite = greenSprite;
+                    slots[i].transform.Find("ArmorBase").GetComponentInChildren<Image>().color = greenColor;
                 }
 
                 //set sprite for 'rare' tagged item
                 if (inventory.items[i].itemRarity == "Rare")
                 {
-                    slots[i].transform.Find("ArmorBase").GetComponentInChildren<Image>().sprite = blueSprite;
+                    //slots[i].transform.Find("ArmorBase").GetComponentInChildren<Image>().sprite = blueSprite;
+                    slots[i].transform.Find("ArmorBase").GetComponentInChildren<Image>().color = blueColor;
                 }
 
 
                 //set sprite for 'legendary' tagged item
                 if (inventory.items[i].itemRarity == "Legendary")
                 {
-                    slots[i].transform.Find("ArmorBase").GetComponentInChildren<Image>().sprite = purpleSprite;
+                    //slots[i].transform.Find("ArmorBase").GetComponentInChildren<Image>().sprite = purpleSprite;
+                    slots[i].transform.Find("ArmorBase").GetComponentInChildren<Image>().color = purpleColor;
                 }
             }
 
