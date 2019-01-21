@@ -13,7 +13,10 @@ public class EnemyController : MonoBehaviour
 
     public Animator Thrall_Animator;
 
-    public float lookRadius = 2.5f;
+    [Header("Look Radius")]
+    [Tooltip("The radius in which the enemy can see the Player and starts chasing him")]
+    [Range(.5f, 5f)]
+    public float lr = 3f;
 
     Transform target;
     NavMeshAgent agent;
@@ -40,7 +43,7 @@ public class EnemyController : MonoBehaviour
     {
         float distance = Vector3.Distance(target.position, transform.position);
 
-        if (distance <= lookRadius)
+        if (distance <= lr)
         {
             agent.SetDestination(target.position);
             currentState = Thrall_States.Walk;
@@ -77,6 +80,6 @@ public class EnemyController : MonoBehaviour
     public void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, lookRadius);
+        Gizmos.DrawWireSphere(transform.position, lr);
     }
 }

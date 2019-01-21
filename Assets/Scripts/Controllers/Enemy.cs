@@ -7,13 +7,25 @@ public class Enemy : MonoBehaviour
 {
     public PlayerController playerController;
 
-    public float attackRadius = 1f;
-    public float delay = 2f;
-    public int health = 5;
-
+    [Header("Attack Radius")]
+    [Tooltip("The radius in which the enemy will start an attack")]
+    [Range(.1f, 2f)]
+    public float ar = 1f; //radius in which the enemy can attack
+    [Header("Damage Radius")]
+    [Tooltip("The radius in which the enemy will do damage to the player")]
+    [Range(.1f, 2f)]
+    public float dr = 1f; //this is so that he attacks if you are inside the attackRadius but take damage when within the damageRadius
+    [Header("Attack Casting Delay")]
+    [Tooltip("The delay the enemy waits for before casting another attack")]
+    public float delay = 2f; //delay the enemy has between attacks
+    [Header("Enemy Health")]
+    [Tooltip("The health of the enemy")]
+    public int health = 5; //enemy health
+    [Header("Enemy Damage")]
+    [Tooltip("The damage the enemy does per attack, duh!")]
     public int enemyDamage = 5;
 
-    public bool boolName;
+    private bool boolName;
 
     Transform target;
     NavMeshAgent agent;
@@ -33,22 +45,31 @@ public class Enemy : MonoBehaviour
 
         float distance = Vector3.Distance(target.position, transform.position);
 
-        if (distance <= attackRadius)
+        if (distance <= ar)
         {
             agent.SetDestination(target.position);
 
             if (distance <= agent.stoppingDistance && !boolName)
             {
-                StartCoroutine(attackPlayer(target.gameObject, delay));
-                boolName = true;
+                AttackPlayer();
             }
         }
     }
 
     public void AttackPlayer()
     {
-        playerController.GetComponent<AudioSource>().Play(0);
-        playerController.playerLife -= enemyDamage;
+        float distance = Vector3.Distance(target.position, transform.position);
+
+        if (distance <= ar)
+        {
+            if (boolName == false)
+            {
+                playerController.GetComponent<AudioSource>().Play(0);
+                playerController.playerLife -= enemyDamage;
+                StartCoroutine(attackPlayer(target.gameObject, delay));
+                boolName = true;
+            }
+        }
     }
 
     private IEnumerator attackPlayer(GameObject target, float delay)
@@ -63,6 +84,7 @@ public class Enemy : MonoBehaviour
     public void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, attackRadius);
+        Gizmos.DrawWireSphere(transform.position, ar);
+        Gizmos.DrawWireSphere(transform.position, dr);
     }
 }
