@@ -51,6 +51,7 @@ public class EnemyController : MonoBehaviour
             if (distance <= agent.stoppingDistance)
             {
                 FaceTarget();
+                currentState = Thrall_States.Idle;
             }
         }
 
