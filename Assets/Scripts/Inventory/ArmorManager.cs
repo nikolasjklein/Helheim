@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ArmorManager : MonoBehaviour
 {
-    //string which reads out which armor is equipped - gets set through the inventory and equip-button-press
+    [Header("Check which Armor is currently equipped")]
+    [Tooltip("String which reads out which Armor is equipped - gets set through the Inventory and Equip-Button-Press")]
     public string whichArmorIsEquipped;
 
     //enum for all the armor states possible (also containing having no armor)
@@ -34,7 +35,7 @@ public class ArmorManager : MonoBehaviour
         GalaxyGlove
     }
 
-    //materials for all the armors (also containing the unarmored state)
+    [Header("Materials for all the Armors")]
     public Material BaseMat;
     public Material LeatherArmorMat;
     public Material BoardHideArmorMat;
@@ -58,9 +59,10 @@ public class ArmorManager : MonoBehaviour
     public Material StormtrooperArmor;
     public Material GalaxyGlove;
 
-    //object of the left hand (for changing its state/material)
+    [Header("Meshes for the Hands")]
+    [Tooltip("Object of the Left Hand (for changing its State/Material)")]
     public GameObject LeftHand;
-    //object of the right hand (for changing its state/material)
+    [Tooltip("Object of the Right Hand (for changing its State/Material)")]
     public GameObject RightHand;
 
     //setting the current armor to unarmored

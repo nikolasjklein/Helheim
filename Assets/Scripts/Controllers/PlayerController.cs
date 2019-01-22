@@ -5,21 +5,23 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    //player health
-    public int playerLife;
-    //text for displaying the player health
+    [Header("Player Life")]
+    [Tooltip("The Maximum Health Points the Player can have")]
+    public int pL;
+    [Header("Player Health Text")]
+    [Tooltip("The text which represents the Player Health on the GUI")]
     public Text playerHealth;
 
     public void Start()
     {
         //set player health to 100 at start
-        playerLife = 100;
+        pL = 100;
     }
 
     public void Update()
     {
         //display the player health in UI
-        playerHealth.text = playerLife.ToString();
+        playerHealth.text = pL.ToString();
         //Debug.Log(playerLife);
     }
 }

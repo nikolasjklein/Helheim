@@ -11,21 +11,21 @@ public class PickUp_Health : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            if (playerControllerIntegration.playerLife < 100)
+            if (playerControllerIntegration.pL < 100)
             {
-                playerControllerIntegration.playerLife += HealthToAdd;
+                playerControllerIntegration.pL += HealthToAdd;
 
-                if (playerControllerIntegration.playerLife > 100)
+                if (playerControllerIntegration.pL > 100)
                 {
-                    playerControllerIntegration.playerLife = 100;
+                    playerControllerIntegration.pL = 100;
                 }
 
                 Destroy(gameObject);
             }
 
-            else if (playerControllerIntegration.playerLife >= 100)
+            else if (playerControllerIntegration.pL >= 100)
             {
-                playerControllerIntegration.playerLife = 100;
+                playerControllerIntegration.pL = 100;
             }
         }
     }

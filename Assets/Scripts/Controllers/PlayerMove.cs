@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+    [Header("Horinztonal Input Axis")]
+    [Tooltip("The Axis at which the Player moves horizontally (in this case A & D)")]
     [SerializeField] private string horizontalInputName;
+    [Header("Vertical Input Axis")]
+    [Tooltip("The Axis at which the Player moves vertically (in this case W & S)")]
     [SerializeField] private string verticalInputName;
-    [SerializeField] private float movementSpeed;
+    [Header("Movement Speed")]
+    [Tooltip("The Speed at which the Player is moving on all Axis")]
+    [SerializeField] private float mvS;
 
+    [Header("Slope Data")]
     [SerializeField] private float slopeForce;
     [SerializeField] private float slopeForceRayLength;
 
@@ -38,7 +45,7 @@ public class PlayerMove : MonoBehaviour
         Vector3 rightMovement = transform.right * horizInput;
 
 
-        charController.SimpleMove(Vector3.ClampMagnitude(forwardMovement + rightMovement, 1.0f) * movementSpeed);
+        charController.SimpleMove(Vector3.ClampMagnitude(forwardMovement + rightMovement, 1.0f) * mvS);
 
         if ((vertInput != 0 || horizInput != 0) && OnSlope())
             charController.Move(Vector3.down * charController.height / 2 * slopeForce * Time.deltaTime);

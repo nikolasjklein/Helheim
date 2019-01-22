@@ -67,7 +67,7 @@ public class Enemy : MonoBehaviour
             if (boolName == false)
             {
                 pCont.GetComponent<AudioSource>().Play(0);
-                pCont.playerLife -= enemyDamage;
+                pCont.pL -= enemyDamage;
                 StartCoroutine(attackPlayer(target.gameObject, delay));
                 boolName = true;
             }
