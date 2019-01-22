@@ -118,5 +118,5 @@ A: Right now, 'Helheim' is being developed by 2 people: Jeff Gagne and Nikolas K
  -----------
 
  Current maintainers:
-  * Jean-François Gagné (_insert role here_):       jeffgagnenord@gmail.com
-  * Nikolas Klein (_insert role here_):             nikolaskleinmail@t-online.de
+  * Jean-François Gagné (_Level Design, Narrative Design, Game Design_):       jeffgagnenord@gmail.com
+  * Nikolas Klein (_Game Programmer, Game Designer, Game Artist_):             nikolaskleinmail@t-online.de
