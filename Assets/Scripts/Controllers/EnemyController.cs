@@ -11,7 +11,9 @@ public class EnemyController : MonoBehaviour
         Walk
     }
 
-    public Animator Thrall_Animator;
+    [Header("Thrall Animator")]
+    [Tooltip("The Animator which contains the Animation States for the Thrall Enemy")]
+    public Animator t_Anim;
 
     [Header("Look Radius")]
     [Tooltip("The radius in which the enemy can see the Player and starts chasing him")]
@@ -62,12 +64,12 @@ public class EnemyController : MonoBehaviour
 
         if (currentState == Thrall_States.Idle)
         {
-            Thrall_Animator.SetBool("isWalking", false);
+            t_Anim.SetBool("isWalking", false);
         }
 
         else if (currentState == Thrall_States.Walk)
         {
-            Thrall_Animator.SetBool("isWalking", true);
+            t_Anim.SetBool("isWalking", true);
         }
     }
 

@@ -5,7 +5,9 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
-    public PlayerController playerController;
+    [Header("Player Controller")]
+    [Tooltip("The GameObject which contains the Character Controller - Script")]
+    public PlayerController pCont;
 
     [Header("Attack Radius")]
     [Tooltip("The radius in which the enemy will start an attack")]
@@ -64,8 +66,8 @@ public class Enemy : MonoBehaviour
         {
             if (boolName == false)
             {
-                playerController.GetComponent<AudioSource>().Play(0);
-                playerController.playerLife -= enemyDamage;
+                pCont.GetComponent<AudioSource>().Play(0);
+                pCont.playerLife -= enemyDamage;
                 StartCoroutine(attackPlayer(target.gameObject, delay));
                 boolName = true;
             }

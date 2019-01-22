@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571334, b: 0.3069219, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -15326,7 +15326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca16c9bf8c227484a9a238b6c85eb8b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 295259756}
+  pCont: {fileID: 295259756}
   ar: 1
   dr: 1
   delay: 1
@@ -15354,7 +15354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98b13b63dee141e4e9c35b8e5c88c71a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Thrall_Animator: {fileID: 1677715440}
+  t_Anim: {fileID: 1677715440}
   lr: 3
   currentState: 0
 --- !u!54 &345838434
@@ -64937,12 +64937,12 @@ Prefab:
     - target: {fileID: 224572377562398658, guid: 9b4ab957b59532a44897439131ebe96a,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 224348904264190750, guid: 9b4ab957b59532a44897439131ebe96a,
         type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224198023986028126, guid: 9b4ab957b59532a44897439131ebe96a,
         type: 2}
@@ -79454,7 +79454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98b13b63dee141e4e9c35b8e5c88c71a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Thrall_Animator: {fileID: 0}
+  t_Anim: {fileID: 0}
   lr: 3
   currentState: 0
 --- !u!4 &1840617423
@@ -79493,7 +79493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca16c9bf8c227484a9a238b6c85eb8b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 295259756}
+  pCont: {fileID: 0}
   ar: 1
   dr: 1
   delay: 1
