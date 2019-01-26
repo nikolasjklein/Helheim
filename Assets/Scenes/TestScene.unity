@@ -12711,7 +12711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalInputName: Horizontal
   verticalInputName: Vertical
-  movementSpeed: 5
+  mvS: 5
   slopeForce: 50
   slopeForceRayLength: 10
 --- !u!143 &295259754
@@ -12762,7 +12762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09238a84599df464da1891889aacaca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerLife: 100
+  pL: 0
   playerHealth: {fileID: 595770957}
 --- !u!114 &295259757
 MonoBehaviour:
@@ -64937,12 +64937,12 @@ Prefab:
     - target: {fileID: 224572377562398658, guid: 9b4ab957b59532a44897439131ebe96a,
         type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224348904264190750, guid: 9b4ab957b59532a44897439131ebe96a,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 224198023986028126, guid: 9b4ab957b59532a44897439131ebe96a,
         type: 2}
