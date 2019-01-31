@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571334, b: 0.3069219, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5479,12 +5479,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 109907588}
+  - {fileID: 262858242}
   m_Father: {fileID: 1453497449}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 178.40002, y: -16.000011}
+  m_AnchoredPosition: {x: 178.40004, y: -16.00002}
   m_SizeDelta: {x: 92.19, y: 92.19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &108371854
@@ -11690,6 +11691,128 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 260915853}
   m_CullTransparentMesh: 0
+--- !u!1 &262858241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 262858242}
+  - component: {fileID: 262858243}
+  - component: {fileID: 262858244}
+  - component: {fileID: 262858245}
+  m_Layer: 5
+  m_Name: Slot_Armor_Icon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &262858242
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 262858241}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 108371853}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -0.000020980835}
+  m_SizeDelta: {x: 92.19, y: 92.19}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &262858243
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 262858241}
+  m_CullTransparentMesh: 0
+--- !u!114 &262858244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 262858241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.0627451, g: 0.0627451, b: 0.0627451, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!114 &262858245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 262858241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 262858244}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1435940439}
+        m_MethodName: UnEquipArmor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!4 &266559821 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4814566229310224, guid: fc7248d933f989347905516d503183fd,
@@ -63228,6 +63351,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31eb333d85142f24b87f9fbac8392624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 295259752}
+  armorManager: {fileID: 295259757}
+  armorIcon: {fileID: 262858244}
+  armorBG: {fileID: 108371854}
+  armorValueText: {fileID: 614069710}
+  leatherArmor: {fileID: 21300000, guid: 4a7b4973793b4c64e8ff3d92fdb02321, type: 3}
+  boarhideArmor: {fileID: 21300000, guid: c4720178e6519aa49a15222f2bf67aa9, type: 3}
+  wolfskinArmor: {fileID: 21300000, guid: 661cb030c5b0a1d48b2dab0e60b332cd, type: 3}
+  chainmailArmor: {fileID: 21300000, guid: 16c4443aa4a008444b82a82c5de53fc9, type: 3}
+  ancientArmor: {fileID: 21300000, guid: 5ddf28bbaac420a468603a307e6fbeda, type: 3}
+  runicArmor: {fileID: 21300000, guid: ffed0db10cb35b64db5c398cf06d8db6, type: 3}
+  slaughteresArmor: {fileID: 21300000, guid: 968e6c887e4b636458e6c19a13784105, type: 3}
+  mithrilArmor: {fileID: 21300000, guid: 609d841afad664d4699744dd91906fba, type: 3}
+  valkyrieinfusedArmor: {fileID: 21300000, guid: 5e61086f0270a4640ab221cbc7253d8a,
+    type: 3}
+  muspelheimArmor: {fileID: 21300000, guid: ddb83e239bd932e4cbec58d5af0a65b4, type: 3}
+  alfheimArmor: {fileID: 21300000, guid: e03def8ab248e174ebf0a7fc692e3ca2, type: 3}
+  niflheimArmor: {fileID: 21300000, guid: 7013c9469d996464baa2d6c5f6ee5e06, type: 3}
+  midgardArmor: {fileID: 21300000, guid: e1c773c7f6384934386f878128fd6384, type: 3}
+  asgardArmor: {fileID: 21300000, guid: 447a86c60b50125479af0590e109255f, type: 3}
+  jotunheimArmor: {fileID: 21300000, guid: 3b95e8f4a7655c54b8a88605280a04ee, type: 3}
+  vanaheimArmor: {fileID: 21300000, guid: 308ac6e69abc6ba4bb7fa989dd946580, type: 3}
+  svartalfheimArmor: {fileID: 21300000, guid: 2f681da96d3c82d428da78d0a5ffa5d7, type: 3}
+  helheimArmor: {fileID: 21300000, guid: 30a5627b86d3035498dc25f431987d2c, type: 3}
+  doomguyArmor: {fileID: 21300000, guid: f2c594321d3c408439c546bb1138864f, type: 3}
+  stormtrooperArmor: {fileID: 21300000, guid: d5d0c03e9b731cc49abdbe118d0d9344, type: 3}
+  galaxyGlove: {fileID: 21300000, guid: c03cd0dfda4ccae49969aba9786cd5b4, type: 3}
   greySprite: {fileID: 21300000, guid: 8cb4dc49cb1945342b64143f11c6832b, type: 3}
   greenSprite: {fileID: 21300000, guid: a8dedbfbf3551a04d96fd2f3330ddd48, type: 3}
   blueSprite: {fileID: 21300000, guid: 879b509f9ed26834eab8beab49aea113, type: 3}
@@ -64918,7 +65068,7 @@ Prefab:
     - target: {fileID: 114422649378146826, guid: 9b4ab957b59532a44897439131ebe96a,
         type: 2}
       propertyPath: m_Text
-      value: Helheim Development Build ver 0.0.2.7
+      value: Helheim Development Build ver 0.0.2.8
       objectReference: {fileID: 0}
     - target: {fileID: 1438871548567954, guid: 9b4ab957b59532a44897439131ebe96a, type: 2}
       propertyPath: m_IsActive

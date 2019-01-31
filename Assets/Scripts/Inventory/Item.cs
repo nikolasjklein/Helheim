@@ -20,6 +20,7 @@ public class Item : ScriptableObject
         Debug.Log("Using" + name);
         player = GameObject.Find("Player");
 
+        /*
         if (name == "LeatherArmor" && player.GetComponentInChildren<ArmorManager>().whichArmorIsEquipped == "LeatherArmor")
         {
             player.GetComponentInChildren<ArmorManager>().whichArmorIsEquipped = "Unarmored";
@@ -124,11 +125,9 @@ public class Item : ScriptableObject
         {
             player.GetComponentInChildren<ArmorManager>().whichArmorIsEquipped = "Unarmored";
         }
+        */
 
-        else
-        {
-            player.GetComponentInChildren<ArmorManager>().whichArmorIsEquipped = name;
-        }
+        player.GetComponentInChildren<ArmorManager>().whichArmorIsEquipped = name;
     }
 
     public void Update()
