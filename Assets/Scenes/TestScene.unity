@@ -15452,7 +15452,7 @@ MonoBehaviour:
   pCont: {fileID: 295259756}
   ar: 1
   dr: 1
-  delay: 1
+  delay: 2
   health: 5
   enemyDamage: 5
 --- !u!114 &345838432

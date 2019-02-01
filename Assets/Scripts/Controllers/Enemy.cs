@@ -27,7 +27,7 @@ public class Enemy : MonoBehaviour
     [Tooltip("The damage the enemy does per attack, duh!")]
     public int enemyDamage = 5;
 
-    private bool boolName;
+    private bool isAttacking;
 
     Transform target;
     NavMeshAgent agent;
@@ -51,7 +51,7 @@ public class Enemy : MonoBehaviour
         {
             agent.SetDestination(target.position);
 
-            if (distance <= agent.stoppingDistance && !boolName)
+            if (distance <= agent.stoppingDistance && !isAttacking)
             {
                 AttackPlayer();
             }
@@ -64,12 +64,14 @@ public class Enemy : MonoBehaviour
 
         if (distance <= ar)
         {
-            if (boolName == false)
+            if (isAttacking == false)
             {
+                isAttacking = true;
+                StartCoroutine(attackPlayer(target.gameObject, delay));
+                /*
                 pCont.GetComponent<AudioSource>().Play(0);
                 pCont.pL -= enemyDamage;
-                StartCoroutine(attackPlayer(target.gameObject, delay));
-                boolName = true;
+                */
             }
         }
     }
@@ -79,8 +81,10 @@ public class Enemy : MonoBehaviour
         yield return new WaitForSeconds(delay);
 
         AttackPlayer();
+        pCont.GetComponent<AudioSource>().Play(0);
+        pCont.pL -= enemyDamage;
 
-        boolName = false;
+        isAttacking = false;
     }
 
     public void OnDrawGizmosSelected()
