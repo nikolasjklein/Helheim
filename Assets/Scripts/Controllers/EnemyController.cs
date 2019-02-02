@@ -5,11 +5,27 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
+    /*
+     animStates:
+     1  -   Idle
+     2  -   Walk
+     3  -   Charge
+     4  -   Attack
+     5  -   Die
+     6  -   Death
+     */
+
     public enum Thrall_States
     {
         Idle,
-        Walk
+        Walk,
+        Charge,
+        Attack,
+        Die,
+        Death
     }
+
+    public Enemy enemy;
 
     [Header("Thrall Animator")]
     [Tooltip("The Animator which contains the Animation States for the Thrall Enemy")]
@@ -43,33 +59,67 @@ public class EnemyController : MonoBehaviour
 
     public void Update()
     {
+        Debug.Log(currentState.ToString());
+
         float distance = Vector3.Distance(target.position, transform.position);
 
-        if (distance <= lr)
+        if (distance >= lr && !enemy.isAttacking)
+        {
+            currentState = Thrall_States.Idle;
+        }
+
+        if (distance <= lr && !enemy.isAttacking)
         {
             agent.SetDestination(target.position);
             currentState = Thrall_States.Walk;
 
-            if (distance <= agent.stoppingDistance)
+            if (distance <= agent.stoppingDistance && !enemy.isAttacking)
             {
                 FaceTarget();
                 currentState = Thrall_States.Idle;
             }
         }
 
-        else
+        else if (distance <= agent.stoppingDistance && enemy.isAttacking)
         {
-            currentState = Thrall_States.Idle;
+            currentState = Thrall_States.Charge;
         }
 
+        ///////////////////////////////////////////////////////////
         if (currentState == Thrall_States.Idle)
         {
-            t_Anim.SetBool("isWalking", false);
+            t_Anim.SetInteger("animState", 1);
         }
 
-        else if (currentState == Thrall_States.Walk)
+        ///////////////////////////////////////////////////////////
+        if (currentState == Thrall_States.Walk)
         {
-            t_Anim.SetBool("isWalking", true);
+            t_Anim.SetInteger("animState", 2);
+        }
+
+        ///////////////////////////////////////////////////////////
+        if (currentState == Thrall_States.Charge)
+        {
+            t_Anim.SetInteger("animState", 3);
+        }
+
+        ///////////////////////////////////////////////////////////
+        if (currentState == Thrall_States.Attack)
+        {
+            t_Anim.SetInteger("animState", 4);
+        }
+
+        ///////////////////////////////////////////////////////////
+        if (currentState == Thrall_States.Die)
+        {
+            t_Anim.SetInteger("animState", 5);
+        }
+
+        if (enemy.isDead)
+        {
+            currentState = Thrall_States.Die;
+            lr = 0f;
+            this.GetComponent<NavMeshAgent>().speed = 0f;
         }
     }
 

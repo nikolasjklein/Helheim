@@ -29,7 +29,7 @@ public class RetroRotatorArmor : MonoBehaviour
         Vector3 viewDirection = MainCamera.transform.position - this.transform.position;
         var viewAngle = Vector3.Angle(transform.forward, viewDirection);
 
-        Debug.Log(viewAngle + SpriteRenderer.sprite.name);
+        //Debug.Log(viewAngle + SpriteRenderer.sprite.name);
         viewAngle += 22.5f;
         ///////////////////////////////////////////////////////////////
         if (/*viewAngle >= 327.5f && */viewAngle <= 45)

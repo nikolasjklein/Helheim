@@ -15449,12 +15449,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca16c9bf8c227484a9a238b6c85eb8b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageArea: {fileID: 525792018}
+  damArea: {fileID: 525792023}
+  enemyController: {fileID: 345838433}
+  isDead: 0
+  delay2: 5
+  delay3: 0.4
   pCont: {fileID: 295259756}
   ar: 1
   dr: 1
   delay: 2
   health: 5
   enemyDamage: 5
+  isAttacking: 0
 --- !u!114 &345838432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15477,6 +15484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98b13b63dee141e4e9c35b8e5c88c71a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy: {fileID: 345838431}
   t_Anim: {fileID: 1677715440}
   lr: 3
   currentState: 0
@@ -23108,6 +23116,7 @@ GameObject:
   - component: {fileID: 525792022}
   - component: {fileID: 525792021}
   - component: {fileID: 525792020}
+  - component: {fileID: 525792023}
   m_Layer: 0
   m_Name: AttackRange
   m_TagString: Untagged
@@ -23146,7 +23155,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 525792018}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -23182,6 +23191,22 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 525792018}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &525792023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 525792018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b09ef7b62ba97a49b7b658ddc60677e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 345838431}
+  enemyIsInRange: 0
+  damageArea: {fileID: 525792018}
+  enemyController: {fileID: 345838433}
+  player: {fileID: 295259752}
 --- !u!1001 &526188441
 Prefab:
   m_ObjectHideFlags: 0
@@ -79759,6 +79784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98b13b63dee141e4e9c35b8e5c88c71a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
   t_Anim: {fileID: 0}
   lr: 3
   currentState: 0
@@ -79798,12 +79824,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca16c9bf8c227484a9a238b6c85eb8b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageArea: {fileID: 0}
+  damArea: {fileID: 0}
+  enemyController: {fileID: 0}
+  isDead: 0
+  delay2: 5
+  delay3: 0.4
   pCont: {fileID: 0}
   ar: 1
   dr: 1
   delay: 1
   health: 5
   enemyDamage: 5
+  isAttacking: 0
 --- !u!224 &1842812687 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224547858390742446, guid: 50b7336fc4320dc41a8f7d84b3727221,
