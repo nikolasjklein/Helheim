@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 67aca68f866c06343b9b44a0cec1aee5
+guid: 711042547f5a8aa469b1a37515ba01c4
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -19,7 +19,7 @@ ModelImporter:
     400010: transform6
     400012: transform7
     400014: transform8
-    2100000: lambert26
+    2100000: lambert27
     2300000: pCylinder12
     3300000: pCylinder12
     4300000: pCylinder12
