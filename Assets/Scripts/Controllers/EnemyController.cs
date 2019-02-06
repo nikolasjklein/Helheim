@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class EnemyController : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class EnemyController : MonoBehaviour
         Die,
         Death
     }
+
+    public Text stateIndicationText;
 
     public Enemy enemy;
 
@@ -59,7 +62,43 @@ public class EnemyController : MonoBehaviour
 
     public void Update()
     {
-        Debug.Log(currentState.ToString());
+        if (currentState == Thrall_States.Idle)
+        {
+            stateIndicationText.text = "Idle";
+            stateIndicationText.color = Color.white;
+        }
+
+        else if (currentState == Thrall_States.Walk)
+        {
+            stateIndicationText.text = "Chase";
+            stateIndicationText.color = Color.yellow;
+        }
+
+        else if (currentState == Thrall_States.Charge)
+        {
+            stateIndicationText.text = "Charge";
+            stateIndicationText.color = Color.red;
+        }
+
+        else if (currentState == Thrall_States.Attack)
+        {
+            stateIndicationText.text = "Attack";
+            stateIndicationText.color = Color.red;
+        }
+
+        else if (currentState == Thrall_States.Die)
+        {
+            stateIndicationText.text = "Dead";
+            stateIndicationText.color = Color.grey;
+        }
+
+        else if (currentState == Thrall_States.Death)
+        {
+            stateIndicationText.text = "Dead";
+            stateIndicationText.color = Color.grey;
+        }
+
+        //Debug.Log(currentState.ToString());
 
         float distance = Vector3.Distance(target.position, transform.position);
 

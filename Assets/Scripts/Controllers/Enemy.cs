@@ -113,7 +113,7 @@ public class Enemy : MonoBehaviour
     //coroutine for attacking the player
     private IEnumerator attackPlayer()
     {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(1f);
 
         enemyController.currentState = EnemyController.Thrall_States.Charge;
         yield return new WaitForSeconds(1f);
