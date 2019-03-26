@@ -4,14 +4,16 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e063b35d4fc8ff41b449b2cd5f5b6d5, type: 3}
   m_Name: NiflheimArmor
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   itemName: Niflheim Armor
-  itemIcon: {fileID: 21300000, guid: 7013c9469d996464baa2d6c5f6ee5e06, type: 3}
+  itemIcon: {fileID: 21300000, guid: 615252d9955f54ec19ce977a5a4cbd9d, type: 3}
   itemRarity: Legendary
   armorDefense: 95
