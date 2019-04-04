@@ -438,4 +438,16 @@ public class InventoryUI : MonoBehaviour
             player.GetComponentInChildren<ArmorManager>().whichArmorIsEquipped = "Unarmored";
         }
     }
+
+    public void LeftHandButton_Click()
+    {
+
+    }
+
+    public void RightHandButton_Click()
+    {
+
+    }
+
+    public void ArmorButton
 }
