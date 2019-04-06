@@ -9,6 +9,8 @@ public class ToggleInventory : MonoBehaviour
 
     public bool isToggled = true;
 
+    public InventoryUI inventoryUI;
+
     public void Start()
     {
         isToggled = true;
@@ -43,6 +45,8 @@ public class ToggleInventory : MonoBehaviour
         else if (!isToggled)
         {
             inventoryCanvas.gameObject.SetActive(false);
+            inventoryUI.Scroll_Armor_Triggered = false;
+            inventoryUI.Scroll_Weapon_Triggered = false;
         }
     }
 }

@@ -5,6 +5,12 @@ using UnityEngine.UI;
 
 public class InventoryUI : MonoBehaviour
 {
+    public bool Scroll_Weapon_Triggered = false;
+    public bool Scroll_Armor_Triggered = false;
+
+    public GameObject Scroll_Weapon;
+    public GameObject Scroll_Armor;
+
     public GameObject player;
 
     public ArmorManager armorManager;
@@ -81,6 +87,24 @@ public class InventoryUI : MonoBehaviour
 
     public void Update()
     {
+        if (Scroll_Weapon_Triggered == true)
+        {
+            Scroll_Weapon.gameObject.SetActive(true);
+            Scroll_Armor.gameObject.SetActive(false);
+        }
+
+        if (Scroll_Armor_Triggered == true)
+        {
+            Scroll_Armor.gameObject.SetActive(true);
+            Scroll_Weapon.gameObject.SetActive(false);
+        }
+
+        if (Scroll_Weapon_Triggered == false && Scroll_Armor_Triggered == false)
+        {
+            Scroll_Weapon.gameObject.SetActive(false);
+            Scroll_Armor.gameObject.SetActive(false);
+        }
+
         if (armorManager.whichArmorIsEquipped == "Unarmored")
         {
             armorIcon.sprite = null;
@@ -532,16 +556,40 @@ public class InventoryUI : MonoBehaviour
 
     public void LeftHandButton_Click()
     {
+        if (Scroll_Weapon_Triggered == false)
+        {
+            Scroll_Weapon_Triggered = true;
+        }
 
+        else if (Scroll_Weapon_Triggered == true)
+        {
+            Scroll_Weapon_Triggered = false;
+        }
     }
 
     public void RightHandButton_Click()
     {
+        if (Scroll_Weapon_Triggered == false)
+        {
+            Scroll_Weapon_Triggered = true;
+        }
 
+        else if (Scroll_Weapon_Triggered == true)
+        {
+            Scroll_Weapon_Triggered = false;
+        }
     }
 
-    public void ArmorButton()
+    public void ArmorButton_Click()
     {
+        if (Scroll_Armor_Triggered == false)
+        {
+            Scroll_Armor_Triggered = true;
+        }
 
+        else if (Scroll_Armor_Triggered == true)
+        {
+            Scroll_Armor_Triggered = false;
+        }
     }
 }
