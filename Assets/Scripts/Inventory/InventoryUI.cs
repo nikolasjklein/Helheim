@@ -18,8 +18,8 @@ public class InventoryUI : MonoBehaviour
     public Image armorBG;
     public Text armorValueText;
 
-    public Image HUD_Icon;
-    public Image HUD_BG;
+    //public Image HUD_Icon;
+    //public Image HUD_BG;
 
     public Sprite leatherArmor;
     public Sprite boarhideArmor;
@@ -111,9 +111,9 @@ public class InventoryUI : MonoBehaviour
             armorIcon.color = blackColor;
             armorBG.color = blackColor;
 
-            HUD_Icon.sprite = null;
-            HUD_Icon.color = blackColor;
-            HUD_BG.color = blackColor;
+            //HUD_Icon.sprite = null;
+            //HUD_Icon.color = blackColor;
+            //HUD_BG.color = blackColor;
 
             armorValueText.text = "0";
         }
@@ -124,9 +124,9 @@ public class InventoryUI : MonoBehaviour
             armorIcon.color = Color.white;
             armorBG.color = greyColor;
 
-            HUD_Icon.sprite = leatherArmor;
-            HUD_Icon.color = Color.white;
-            HUD_BG.color = greyColor;
+            //HUD_Icon.sprite = leatherArmor;
+            //HUD_Icon.color = Color.white;
+            //HUD_BG.color = greyColor;
 
             armorValueText.text = "5";
         }
@@ -137,9 +137,9 @@ public class InventoryUI : MonoBehaviour
             armorIcon.color = Color.white;
             armorBG.color = greyColor;
 
-            HUD_Icon.sprite = boarhideArmor;
-            HUD_Icon.color = Color.white;
-            HUD_BG.color = greyColor;
+            //HUD_Icon.sprite = boarhideArmor;
+            //HUD_Icon.color = Color.white;
+            //HUD_BG.color = greyColor;
 
             armorValueText.text = "7";
         }
@@ -150,9 +150,9 @@ public class InventoryUI : MonoBehaviour
             armorIcon.color = Color.white;
             armorBG.color = greyColor;
 
-            HUD_Icon.sprite = wolfskinArmor;
-            HUD_Icon.color = Color.white;
-            HUD_BG.color = greyColor;
+            //HUD_Icon.sprite = wolfskinArmor;
+            //HUD_Icon.color = Color.white;
+            //HUD_BG.color = greyColor;
 
             armorValueText.text = "8";
         }
@@ -163,9 +163,9 @@ public class InventoryUI : MonoBehaviour
             armorIcon.color = Color.white;
             armorBG.color = greenColor;
 
-            HUD_Icon.sprite = chainmailArmor;
-            HUD_Icon.color = Color.white;
-            HUD_BG.color = greenColor;
+            //HUD_Icon.sprite = chainmailArmor;
+            //HUD_Icon.color = Color.white;
+            //HUD_BG.color = greenColor;
 
             armorValueText.text = "18";
         }
@@ -176,9 +176,9 @@ public class InventoryUI : MonoBehaviour
             armorIcon.color = Color.white;
             armorBG.color = greenColor;
 
-            HUD_Icon.sprite = ancientArmor;
-            HUD_Icon.color = Color.white;
-            HUD_BG.color = greenColor;
+            //HUD_Icon.sprite = ancientArmor;
+            //HUD_Icon.color = Color.white;
+            //HUD_BG.color = greenColor;
 
             armorValueText.text = "21";
         }
@@ -189,9 +189,9 @@ public class InventoryUI : MonoBehaviour
             armorIcon.color = Color.white;
             armorBG.color = greenColor;
 
-            HUD_Icon.sprite = runicArmor;
-            HUD_Icon.color = Color.white;
-            HUD_BG.color = greenColor;
+            //HUD_Icon.sprite = runicArmor;
+            //HUD_Icon.color = Color.white;
+            //HUD_BG.color = greenColor;
 
             armorValueText.text = "25";
         }
@@ -202,9 +202,9 @@ public class InventoryUI : MonoBehaviour
             armorIcon.color = Color.white;
             armorBG.color = blueColor;
 
-            HUD_Icon.sprite = slaughteresArmor;
-            HUD_Icon.color = Color.white;
-            HUD_BG.color = blueColor;
+            //HUD_Icon.sprite = slaughteresArmor;
+            //HUD_Icon.color = Color.white;
+            //HUD_BG.color = blueColor;
 
             armorValueText.text = "50";
         }
@@ -215,9 +215,9 @@ public class InventoryUI : MonoBehaviour
             armorIcon.color = Color.white;
             armorBG.color = blueColor;
 
-            HUD_Icon.sprite = mithrilArmor;
-            HUD_Icon.color = Color.white;
-            HUD_BG.color = blueColor;
+            //HUD_Icon.sprite = mithrilArmor;
+            //HUD_Icon.color = Color.white;
+            //HUD_BG.color = blueColor;
 
             armorValueText.text = "52";
         }
@@ -228,9 +228,9 @@ public class InventoryUI : MonoBehaviour
             armorIcon.color = Color.white;
             armorBG.color = blueColor;
 
-            HUD_Icon.sprite = valkyrieinfusedArmor;
-            HUD_Icon.color = Color.white;
-            HUD_BG.color = blueColor;
+            //HUD_Icon.sprite = valkyrieinfusedArmor;
+            //HUD_Icon.color = Color.white;
+            //HUD_BG.color = blueColor;
 
             armorValueText.text = "59";
         }
@@ -241,9 +241,9 @@ public class InventoryUI : MonoBehaviour
             armorIcon.color = Color.white;
             armorBG.color = purpleColor;
 
-            HUD_Icon.sprite = muspelheimArmor;
-            HUD_Icon.color = Color.white;
-            HUD_BG.color = purpleColor;
+            //HUD_Icon.sprite = muspelheimArmor;
+            //HUD_Icon.color = Color.white;
+            //HUD_BG.color = purpleColor;
 
             armorValueText.text = "96";
         }
@@ -254,9 +254,9 @@ public class InventoryUI : MonoBehaviour
             armorIcon.color = Color.white;
             armorBG.color = purpleColor;
 
-            HUD_Icon.sprite = alfheimArmor;
-            HUD_Icon.color = Color.white;
-            HUD_BG.color = purpleColor;
+            //HUD_Icon.sprite = alfheimArmor;
+            //HUD_Icon.color = Color.white;
+            //HUD_BG.color = purpleColor;
 
             armorValueText.text = "86";
         }
@@ -267,9 +267,9 @@ public class InventoryUI : MonoBehaviour
             armorIcon.color = Color.white;
             armorBG.color = purpleColor;
 
-            HUD_Icon.sprite = niflheimArmor;
-            HUD_Icon.color = Color.white;
-            HUD_BG.color = purpleColor;
+            //HUD_Icon.sprite = niflheimArmor;
+            //HUD_Icon.color = Color.white;
+            //HUD_BG.color = purpleColor;
 
             armorValueText.text = "95";
         }
@@ -280,9 +280,9 @@ public class InventoryUI : MonoBehaviour
             armorIcon.color = Color.white;
             armorBG.color = purpleColor;
 
-            HUD_Icon.sprite = midgardArmor;
-            HUD_Icon.color = Color.white;
-            HUD_BG.color = purpleColor;
+            //HUD_Icon.sprite = midgardArmor;
+            //HUD_Icon.color = Color.white;
+            //HUD_BG.color = purpleColor;
 
             armorValueText.text = "89";
         }
@@ -293,9 +293,9 @@ public class InventoryUI : MonoBehaviour
             armorIcon.color = Color.white;
             armorBG.color = purpleColor;
 
-            HUD_Icon.sprite = asgardArmor;
-            HUD_Icon.color = Color.white;
-            HUD_BG.color = purpleColor;
+            //HUD_Icon.sprite = asgardArmor;
+            //HUD_Icon.color = Color.white;
+            //HUD_BG.color = purpleColor;
 
             armorValueText.text = "88";
         }
@@ -306,9 +306,9 @@ public class InventoryUI : MonoBehaviour
             armorIcon.color = Color.white;
             armorBG.color = purpleColor;
 
-            HUD_Icon.sprite = jotunheimArmor;
-            HUD_Icon.color = Color.white;
-            HUD_BG.color = purpleColor;
+            //HUD_Icon.sprite = jotunheimArmor;
+            //HUD_Icon.color = Color.white;
+            //HUD_BG.color = purpleColor;
 
             armorValueText.text = "91";
         }
@@ -319,9 +319,9 @@ public class InventoryUI : MonoBehaviour
             armorIcon.color = Color.white;
             armorBG.color = purpleColor;
 
-            HUD_Icon.sprite = vanaheimArmor;
-            HUD_Icon.color = Color.white;
-            HUD_BG.color = purpleColor;
+            //HUD_Icon.sprite = vanaheimArmor;
+            //HUD_Icon.color = Color.white;
+            //HUD_BG.color = purpleColor;
 
             armorValueText.text = "90";
         }
@@ -332,9 +332,9 @@ public class InventoryUI : MonoBehaviour
             armorIcon.color = Color.white;
             armorBG.color = purpleColor;
 
-            HUD_Icon.sprite = svartalfheimArmor;
-            HUD_Icon.color = Color.white;
-            HUD_BG.color = purpleColor;
+            //HUD_Icon.sprite = svartalfheimArmor;
+            //HUD_Icon.color = Color.white;
+            //HUD_BG.color = purpleColor;
 
             armorValueText.text = "89";
         }
@@ -345,9 +345,9 @@ public class InventoryUI : MonoBehaviour
             armorIcon.color = Color.white;
             armorBG.color = purpleColor;
 
-            HUD_Icon.sprite = helheimArmor;
-            HUD_Icon.color = Color.white;
-            HUD_BG.color = purpleColor;
+            //HUD_Icon.sprite = helheimArmor;
+            //HUD_Icon.color = Color.white;
+            //HUD_BG.color = purpleColor;
 
             armorValueText.text = "100";
         }
@@ -358,9 +358,9 @@ public class InventoryUI : MonoBehaviour
             armorIcon.color = Color.white;
             armorBG.color = greenColor;
 
-            HUD_Icon.sprite = doomguyArmor;
-            HUD_Icon.color = Color.white;
-            HUD_BG.color = greenColor;
+            //HUD_Icon.sprite = doomguyArmor;
+            //HUD_Icon.color = Color.white;
+            //HUD_BG.color = greenColor;
 
             armorValueText.text = "66";
         }
@@ -371,9 +371,9 @@ public class InventoryUI : MonoBehaviour
             armorIcon.color = Color.white;
             armorBG.color = greenColor;
 
-            HUD_Icon.sprite = stormtrooperArmor;
-            HUD_Icon.color = Color.white;
-            HUD_BG.color = greenColor;
+            //HUD_Icon.sprite = stormtrooperArmor;
+            //HUD_Icon.color = Color.white;
+            //HUD_BG.color = greenColor;
 
             armorValueText.text = "21";
         }
@@ -384,9 +384,9 @@ public class InventoryUI : MonoBehaviour
             armorIcon.color = Color.white;
             armorBG.color = purpleColor;
 
-            HUD_Icon.sprite = galaxyGlove;
-            HUD_Icon.color = Color.white;
-            HUD_BG.color = purpleColor;
+            //HUD_Icon.sprite = galaxyGlove;
+            //HUD_Icon.color = Color.white;
+            //HUD_BG.color = purpleColor;
 
             armorValueText.text = "100";
         }
